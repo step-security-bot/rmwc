@@ -1,14 +1,12 @@
 import React from 'react';
 
-import { storiesOf } from '@storybook/react';
-import { ListItem, ListItemGraphic } from '../list';
+import { Portal } from '.';
 
-storiesOf('Base', module).add('simpleTag elementRef', () => {
-  const Link = ({ to, ...rest }: any) => <a href="#" {...rest} />;
-  return (
-    <ListItem tag={Link} {...{ to: '/' }}>
-      <ListItemGraphic icon="home" />
-      Home
-    </ListItem>
-  );
-});
+export default {
+  title: 'Portal',
+  component: Portal
+};
+
+export const PortalGeneral = {
+  render: () => <Portal />
+};

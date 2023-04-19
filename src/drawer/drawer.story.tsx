@@ -1,8 +1,8 @@
-import React from 'react';
+// import React from 'react';
 
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { boolean } from '@storybook/addon-knobs';
+// import { storiesOf } from '@storybook/react';
+// import { action } from '@storybook/addon-actions';
+// import { boolean } from '@storybook/addon-knobs';
 import {
   Drawer,
   DrawerHeader,
@@ -10,51 +10,56 @@ import {
   DrawerTitle,
   DrawerSubtitle
 } from './';
-import { List, ListItem, ListItemGraphic } from '../list';
-import { useKnob } from '@rmwc/base/utils/use-knob';
+// import { List, ListItem, ListItemGraphic } from '../list';
+// import { useKnob } from '@rmwc/base/utils/use-knob';
 
-const menuItems = [
-  { displayName: 'Home', icon: 'home' },
-  { displayName: 'Profile', icon: 'account_circle' },
-  { displayName: 'About', icon: 'info' },
-  { displayName: 'Contact', icon: 'phone' }
-];
+export default {
+  title: 'Drawer',
+  component: Drawer
+};
 
-const ListItems = (props: any) => (
-  <>
-    {menuItems.map((section, i) => (
-      <ListItem key={i} onClick={props.onItemClick}>
-        <ListItemGraphic>{section.icon}</ListItemGraphic>
-        {section.displayName}
-      </ListItem>
-    ))}
-  </>
-);
+// const menuItems = [
+//   { displayName: 'Home', icon: 'home' },
+//   { displayName: 'Profile', icon: 'account_circle' },
+//   { displayName: 'About', icon: 'info' },
+//   { displayName: 'Contact', icon: 'phone' }
+// ];
 
-storiesOf('Drawers', module).add('Drawer', function () {
-  const [open, setOpen] = useKnob('boolean', 'open', true);
-  return (
-    <div style={{ margin: '-24px' }}>
-      <Drawer
-        modal={boolean('modal', false)}
-        dismissible={boolean('dismissible', false)}
-        open={open}
-        onClose={() => {
-          action('onClose')();
-          setOpen(false);
-        }}
-        foundationRef={console.log}
-      >
-        <DrawerHeader style={{ backgroundColor: '#f6f6f6' }}>
-          <DrawerTitle>DrawerTitle</DrawerTitle>
-          <DrawerSubtitle>DrawerSubtitle</DrawerSubtitle>
-        </DrawerHeader>
-        <DrawerContent>
-          <List>
-            <ListItems onItemClick={action('onClick')} />
-          </List>
-        </DrawerContent>
-      </Drawer>
-    </div>
-  );
-});
+// const ListItems = (props: any) => (
+//   <>
+//     {menuItems.map((section, i) => (
+//       <ListItem key={i} onClick={props.onItemClick}>
+//         <ListItemGraphic>{section.icon}</ListItemGraphic>
+//         {section.displayName}
+//       </ListItem>
+//     ))}
+//   </>
+// );
+
+// storiesOf('Drawers', module).add('Drawer', function () {
+//   const [open, setOpen] = useKnob('boolean', 'open', true);
+//   return (
+//     <div style={{ margin: '-24px' }}>
+//       <Drawer
+//         modal={boolean('modal', false)}
+//         dismissible={boolean('dismissible', false)}
+//         open={open}
+//         onClose={() => {
+//           action('onClose')();
+//           setOpen(false);
+//         }}
+//         foundationRef={console.log}
+//       >
+//         <DrawerHeader style={{ backgroundColor: '#f6f6f6' }}>
+//           <DrawerTitle>DrawerTitle</DrawerTitle>
+//           <DrawerSubtitle>DrawerSubtitle</DrawerSubtitle>
+//         </DrawerHeader>
+//         <DrawerContent>
+//           <List>
+//             <ListItems onItemClick={action('onClick')} />
+//           </List>
+//         </DrawerContent>
+//       </Drawer>
+//     </div>
+//   );
+// });
