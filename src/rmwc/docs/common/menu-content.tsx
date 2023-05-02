@@ -1,6 +1,5 @@
 import React from 'react';
 import { CircularProgress } from '@rmwc/circular-progress';
-import { DocsMarkdown } from '../../../doc-utils';
 
 import InstallationMD from '../markdown/README-INSTALLATION.md';
 import UsageMD from '../markdown/README-USAGE.md';
@@ -41,15 +40,6 @@ import { galleryExample as topAppBarExample } from '@rmwc/top-app-bar/readme';
 import { galleryExample as tooltipExample } from '@rmwc/tooltip/readme';
 import { galleryExample as typographyExample } from '@rmwc/typography/readme';
 import { galleryExample as iconExample } from '@rmwc/icon/readme';
-
-const InstallationDocs = () => <DocsMarkdown fileSrc={InstallationMD} />;
-const UsageDocs = () => <DocsMarkdown fileSrc={UsageMD} />;
-const StylingThemingDocs = () => <DocsMarkdown fileSrc={StylingMD} />;
-const MethodologyDocs = () => <DocsMarkdown fileSrc={MethodologyMD} />;
-const LibraryIntegrationsDocs = () => (
-  <DocsMarkdown fileSrc={LibraryIntegrationsMD} />
-);
-const TypeDocs = () => <DocsMarkdown fileSrc={TypesMD} />;
 
 const ResourcesDocs = React.lazy(() => import('../views/resources'));
 
@@ -128,41 +118,6 @@ export type MenuItemT = {
 };
 
 export const menuContent: MenuItemT[] = [
-  {
-    label: 'Getting Started',
-    options: [
-      {
-        label: 'Installation',
-        url: `/installation`,
-        component: Loadable(InstallationDocs)
-      },
-      {
-        label: 'Basic Usage',
-        url: `/usage`,
-        component: Loadable(UsageDocs)
-      },
-      {
-        label: 'Project Methodology',
-        url: `/methodology`,
-        component: Loadable(MethodologyDocs)
-      },
-      {
-        label: 'Type System',
-        url: `/type-system`,
-        component: Loadable(TypeDocs)
-      },
-      {
-        label: 'Library Integrations',
-        url: `/library-integrations`,
-        component: Loadable(LibraryIntegrationsDocs)
-      }
-    ]
-  },
-  {
-    label: 'Style and Theming',
-    url: `/styling-theming`,
-    component: Loadable(StylingThemingDocs)
-  },
   {
     label: 'Resources',
     url: `/resources`,

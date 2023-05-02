@@ -1,5 +1,5 @@
 import * as RMWC from '@rmwc/types';
-import React, { useMemo } from 'react';
+import React, { Fragment, useMemo } from 'react';
 
 import {
   toDashCase,
@@ -93,3 +93,11 @@ export const ThemeProvider = createComponent<ThemeProviderProps>(
     );
   }
 );
+
+export const ThemeFragment: React.FC<{ children: any }> = ({ children }) => {
+  const colors = useMemo(() => {
+    return '';
+  }, []);
+
+  return <Fragment>{children}</Fragment>;
+};
