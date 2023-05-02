@@ -39,7 +39,6 @@ const config = {
       {
         alias: {
           '@doc-utils': path.resolve(__dirname, '../src/doc-utils.tsx'),
-          '@rmwc': path.resolve(__dirname, '../src'),
         },
       },
     ],
