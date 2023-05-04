@@ -7,29 +7,17 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* --ifm-color-primary: #fff500; */
-  /* --ifm-color-primary: #0070f3; */
-  /* --ifm-color-primary: #7928ca; */
   --ifm-color-text: white;
   --ifm-color-background: black;
-  --ifm-color-primary: #50e3c2;
-  /*
-  --ifm-color-primary-dark: #e60073;
-  --ifm-color-primary-darker: #d9006d;
-  --ifm-color-primary-darkest: #b3005a;
-  --ifm-color-primary-light: #ff1a8d;
-  --ifm-color-primary-lighter: #ff2693;
-  --ifm-color-primary-lightest: #ff4da6; */
-  /* --ifm-color-primary: #25c2a0; */
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: none;
+  --ifm-color-primary-dark: none;
+  --ifm-color-primary-darker: none;
+  --ifm-color-primary-darkest: none;
+  --ifm-color-primary-light: none;
+  --ifm-color-primary-lighter: none;
+  --ifm-color-primary-lightest: none;
+  --ifm-table-stripe-background: none;
   --ifm-code-font-size: 95%;
-
-  --ifm-container-width-xl: 1140px;
 }
 
 .padding-top--md {
@@ -58,48 +46,4 @@
 .banner-show-on-hover:focus,
 .banner-show-on-hover:active {
   opacity: 1;
-}
-
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: initial;
-  --ifm-color-primary-dark: initial;
-  --ifm-color-primary-darker: initial;
-  --ifm-color-primary-darkest: initial;
-  --ifm-color-primary-light: none;
-  --ifm-color-primary-lighter: none;
-  --ifm-color-primary-lightest: none;
-  --ifm-code-font-size: 95%;
-
-  --ifm-color-primary: revert;
-  --ifm-color-primary-dark: none;
-  --ifm-color-primary-darker: none;
-  --ifm-color-primary-darkest: none;
-  --ifm-color-primary-light: none;
-  --ifm-color-primary-lighter: none;
-  --ifm-color-primary-lightest: none;
-
-  --ifm-border-color: #f4f2f4;
-  --ifm-toc-border-color: none;
-  --ifm-background-color: white;
-
-  --ifm-navbar-shadow: 0 0 0 1px var(--ifm-border-color);
-  --ifm-container-width-xl: 1140px;
-  /* background-color */
-  --ifm-menu-color-background-active: none;
-  --ifm-menu-color-active: var(--ifm-color-content);
-}
-
-[data-theme='dark'] {
-  --ifm-border-color: hsl(243 4.9% 18.8%);
-  --ifm-toc-border-color: var(--ifm-border-color);
-  --ifm-background-color: hsl(246 6% 9%);
-  --ifm-code-border-radius: 16px;
-  --ifm-menu-color-background-active: #32275f;
 }

@@ -50,7 +50,7 @@ const config = {
   ],
   themeConfig: {
     colorMode: {
-      defaultMode: 'dark',
+      defaultMode: 'light',
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
@@ -70,7 +70,7 @@ const config = {
         },
         {
           label: 'Discord',
-          href: 'https://discordapp.com/invite/docusaurus',
+          href: 'https://discord.gg/4BSUxCW',
           position: 'right',
         },
         {
