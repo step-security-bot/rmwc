@@ -33,6 +33,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          breadcrumbs: false,
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/', //disable landing page
         },
@@ -54,6 +55,21 @@ const config = {
       disableSwitch: true,
       respectPrefersColorScheme: false,
     },
+    docs: {
+      sidebar: {
+        hideable: false,
+        autoCollapseCategories: false,
+      },
+    },
+    /*algolia: {      
+      apiKey: 'b76b3c92f921ee02e86acdf13ae7bb0e',
+      indexName: 'rmwc',      
+      // Optional: see doc section bellow      
+      contextualSearch: true,
+      // Optional: Algolia search parameters
+      // searchParameters: {},
+      //... other Algolia params
+    },*/
     navbar: {
       title: 'RMWC',
       logo: {
