@@ -52,6 +52,7 @@
     "top-app-bar": "./src/top-app-bar",
     "types": "./src/types",
     "typography": "./src/typography",
+    "@doc-utils": "./src/doc-utils",
     "@types/mdx": "^2.0.5",
     "@types/node": "20.1.0",
     "@types/react": "18.2.6",
@@ -62,11 +63,6 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rmwc": "*",
-    "doc-utils": "*",
     "typescript": "5.0.4"
-  },
-  "devDependencies": {
-    "next-compose-plugins": "^2.2.1",
-    "next-transpile-modules": "^10.0.0"
   }
 }
