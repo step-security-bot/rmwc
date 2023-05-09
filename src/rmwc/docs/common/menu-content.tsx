@@ -2,12 +2,12 @@ import React from 'react';
 import { CircularProgress } from '@rmwc/circular-progress';
 import { DocsMarkdown } from '../../../doc-utils';
 
-import InstallationMD from '../markdown/README-INSTALLATION.md';
-import UsageMD from '../markdown/README-USAGE.md';
-import StylingMD from '../markdown/README-STYLING-THEMING.md';
-import MethodologyMD from '../markdown/README-METHODOLOGY.md';
-import LibraryIntegrationsMD from '../markdown/README-LIBRARY-INTEGRATIONS.md';
-import TypesMD from '../markdown/README-TYPES.md';
+import InstallationMD from '../markdown/README-INSTALLATION.mdx';
+import UsageMD from '../markdown/README-USAGE.mdx';
+import StylingMD from '../markdown/README-STYLING-THEMING.mdx';
+import MethodologyMD from '../markdown/README-METHODOLOGY.mdx';
+import LibraryIntegrationsMD from '../markdown/README-LIBRARY-INTEGRATIONS.mdx';
+import TypesMD from '../markdown/README-TYPES.mdx';
 
 import { galleryExample as avatarExample } from '@rmwc/avatar/readme';
 import { galleryExample as badgeExample } from '@rmwc/badge/readme';
