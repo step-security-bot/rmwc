@@ -8,7 +8,6 @@ import { Theme } from '@rmwc/theme';
 import { Icon } from '@rmwc/icon';
 
 import styles from './home.module.css';
-import './home.global.css';
 import { Button } from '@rmwc/button';
 
 import { galleryContent } from '../../common/menu-content';
