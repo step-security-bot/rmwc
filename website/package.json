@@ -35,6 +35,7 @@
     "line-ripple": "./src/line-ripple",
     "linear-progress": "./src/linear-progress",
     "list": "./src/list",
+    "material-components-web": "^8.0.0",
     "menu": "./src/menu",
     "notched-outline": "./src/notched-outline",
     "provider": "./src/provider",

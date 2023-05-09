@@ -31,14 +31,14 @@ function Example({
   url: string;
 }) {
   return (
-    <>
+    <div className={styles.example} onClick={() => window.scrollTo(0, 0)}>
       <div className={styles.exampleInner}>
         <div>{ex}</div>
       </div>
       <div className={styles.exampleName}>
         <Typography use="headline6">{name}</Typography>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -57,9 +57,11 @@ export const Home = () => {
                 Web library
               </Typography>
 
-              <Button theme={['secondaryBg', 'onSecondary']} raised>
-                Get Started
-              </Button>
+              <div>
+                <Button theme={['secondaryBg', 'onSecondary']} raised>
+                  Get Started
+                </Button>
+              </div>
               <Typography tag="h3" use="caption">
                 v{RMWC_VERSION}
               </Typography>
@@ -76,24 +78,26 @@ export const Home = () => {
 
           <Grid className={styles.featureGrid}>
             <GridCell span={4}>
-              <Card theme={['primaryBg', 'onPrimary']}>
-                <div style={{ padding: '1rem' }}>
-                  <Typography use="headline6" tag="div">
-                    Simple to Use
-                  </Typography>
-                  <Typography tag="div" use="body1">
-                    Get started in 5 minutes.
-                  </Typography>
-                </div>
-                <CardMedia
-                  style={{
-                    backgroundSize: 'fill',
-                    backgroundImage: 'url(images/backgrounds/home-1.png)',
-                    minHeight: '5rem',
-                    flex: 1
-                  }}
-                />
-              </Card>
+              <div>
+                <Card theme={['primaryBg', 'onPrimary']}>
+                  <div style={{ padding: '1rem' }}>
+                    <Typography use="headline6" tag="div">
+                      Simple to Use
+                    </Typography>
+                    <Typography tag="div" use="body1">
+                      Get started in 5 minutes.
+                    </Typography>
+                  </div>
+                  <CardMedia
+                    style={{
+                      backgroundSize: 'fill',
+                      backgroundImage: 'url(images/backgrounds/home-1.png)',
+                      minHeight: '5rem',
+                      flex: 1
+                    }}
+                  />
+                </Card>
+              </div>
             </GridCell>
 
             <GridCell span={4}>
@@ -123,28 +127,30 @@ export const Home = () => {
             </GridCell>
 
             <GridCell span={4}>
-              <Card
-                style={{ backgroundColor: '#212121' }}
-                theme="textPrimaryOnDark"
-              >
-                <div style={{ padding: '1rem' }}>
-                  <Typography use="headline6" tag="div">
-                    Easy to Customize
-                  </Typography>
-                  <Typography tag="div" use="body1">
-                    Integrate with a variety of CSS workflows.
-                  </Typography>
-                </div>
+              <div>
+                <Card
+                  style={{ backgroundColor: '#212121' }}
+                  theme="textPrimaryOnDark"
+                >
+                  <div style={{ padding: '1rem' }}>
+                    <Typography use="headline6" tag="div">
+                      Easy to Customize
+                    </Typography>
+                    <Typography tag="div" use="body1">
+                      Integrate with a variety of CSS workflows.
+                    </Typography>
+                  </div>
 
-                <CardMedia
-                  style={{
-                    backgroundSize: 'cover',
-                    backgroundImage: 'url(images/backgrounds/home-3.png)',
-                    minHeight: '5rem',
-                    flex: 1
-                  }}
-                />
-              </Card>
+                  <CardMedia
+                    style={{
+                      backgroundSize: 'cover',
+                      backgroundImage: 'url(images/backgrounds/home-3.png)',
+                      minHeight: '5rem',
+                      flex: 1
+                    }}
+                  />
+                </Card>
+              </div>
             </GridCell>
           </Grid>
         </div>
@@ -165,3 +171,4 @@ export const Home = () => {
     </React.Fragment>
   );
 };
+export default Home;

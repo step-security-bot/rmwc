@@ -1,0 +1,14 @@
+/* page home */
+:global(#page-home .app__content) {
+  display: flex;
+  flex-direction: column;
+}
+
+:global(#page-home .mdc-layout-grid) {
+  padding: 0;
+}
+
+:global(#page-home .mdc-layout-grid__cell) {
+  display: flex;
+  flex-direction: column;
+}
