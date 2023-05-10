@@ -31,14 +31,18 @@ function Example({
   url: string;
 }) {
   return (
-    <div className={styles.example} onClick={() => window.scrollTo(0, 0)}>
+    <a
+      href={url}
+      className={styles.example}
+      onClick={() => window.scrollTo(0, 0)}
+    >
       <div className={styles.exampleInner}>
         <div>{ex}</div>
       </div>
       <div className={styles.exampleName}>
         <Typography use="headline6">{name}</Typography>
       </div>
-    </div>
+    </a>
   );
 }
 
@@ -57,11 +61,11 @@ export const Home = () => {
                 Web library
               </Typography>
 
-              <div>
+              <a href="/installation">
                 <Button theme={['secondaryBg', 'onSecondary']} raised>
                   Get Started
                 </Button>
-              </div>
+              </a>
               <Typography tag="h3" use="caption">
                 v{RMWC_VERSION}
               </Typography>
@@ -78,7 +82,7 @@ export const Home = () => {
 
           <Grid className={styles.featureGrid}>
             <GridCell span={4}>
-              <div>
+              <a href="/installation">
                 <Card theme={['primaryBg', 'onPrimary']}>
                   <div style={{ padding: '1rem' }}>
                     <Typography use="headline6" tag="div">
@@ -97,7 +101,7 @@ export const Home = () => {
                     }}
                   />
                 </Card>
-              </div>
+              </a>
             </GridCell>
 
             <GridCell span={4}>
@@ -127,7 +131,7 @@ export const Home = () => {
             </GridCell>
 
             <GridCell span={4}>
-              <div>
+              <a href="/styling-theming">
                 <Card
                   style={{ backgroundColor: '#212121' }}
                   theme="textPrimaryOnDark"
@@ -150,7 +154,7 @@ export const Home = () => {
                     }}
                   />
                 </Card>
-              </div>
+              </a>
             </GridCell>
           </Grid>
         </div>
