@@ -1,5 +1,8 @@
 {
   "version": "1.0.0",
   "name": "doc-utils",
-  "main": "index.ts"
+  "main": "index.ts",
+  "dependencies": {
+    "react-live": "^4.0.1"
+  }
 }
