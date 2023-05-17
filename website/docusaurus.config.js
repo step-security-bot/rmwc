@@ -57,7 +57,7 @@ const config = {
     },
     docs: {
       sidebar: {
-        hideable: false,
+        hideable: true,
         autoCollapseCategories: false,
       },
     },
@@ -76,11 +76,10 @@ const config = {
         alt: 'RMWC Logo',
         src: 'img/logo.svg',
       },
-      
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'docs',
           position: 'left',
           label: 'Docs',
         },
