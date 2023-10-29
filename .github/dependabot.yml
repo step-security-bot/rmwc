@@ -16,3 +16,223 @@ updates:
       - dependency-name: "@material/*"
       - dependency-name: "material-components-web"
  
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/avatar
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/badge
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/base
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/button
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/card
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/checkbox
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/chip
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/circular-progress
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/data-table
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/dialog
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/drawer
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/elevation
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/fab
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/floating-label
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/formfield
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/grid-list
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/grid
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/icon-button
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/icon
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/image-list
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/line-ripple
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/linear-progress
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/list
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/menu
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/notched-outline
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/provider
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/radio
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/ripple
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/rmwc
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/segmented-button
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/select
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/slider
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/snackbar
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/switch
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/tabs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/textfield
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/theme
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/toggleable
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/tooltip
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/top-app-bar
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/touch-target
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/types
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /packages/typography
+    schedule:
+      interval: daily
